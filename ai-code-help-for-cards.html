@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Different Card Designs</title>
+    <style>
+        /* General Page Styling */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f6f9;
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 40px;
+        }
+
+        /* Container to align cards side by side */
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+            max-width: 1200px;
+            width: 100%;
+        }
+
+        /* ==========================================
+           DESIGN 1: BASIC CARD
+           ========================================== */
+        .basic-card {
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 24px;
+            width: 300px;
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.05);
+            background-color: #ffffff;
+            box-sizing: border-box;
+        }
+
+        .basic-card h3 {
+            margin-top: 0;
+            color: #2c3e50;
+            font-size: 1.3rem;
+        }
+
+        .basic-card p {
+            color: #555;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        .basic-card button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 18px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px;
+            font-weight: 600;
+            transition: background-color 0.2s ease;
+        }
+
+        .basic-card button:hover {
+            background-color: #0056b3;
+        }
+
+        /* ==========================================
+           DESIGN 2: IMAGE CARD
+           ========================================== */
+        .image-card {
+            border-radius: 10px;
+            overflow: hidden;
+            width: 300px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            background-color: #ffffff;
+            box-sizing: border-box;
+        }
+
+        .image-card img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card-content h3 {
+            margin-top: 0;
+            color: #2c3e50;
+            font-size: 1.3rem;
+        }
+
+        .card-content p {
+            color: #555;
+            font-size: 0.95rem;
+            line-height: 1.5;
+            margin-bottom: 0;
+        }
+
+        /* ==========================================
+           DESIGN 3: HOVER EFFECT CARD
+           ========================================== */
+        .hover-card {
+            border-radius: 8px;
+            padding: 24px;
+            width: 300px;
+            background-color: #ffffff;
+            border: 1px solid #e0e0e0;
+            box-sizing: border-box;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+        }
+
+        .hover-card h3 {
+            margin-top: 0;
+            color: #2c3e50;
+            font-size: 1.3rem;
+        }
+
+        .hover-card p {
+            color: #555;
+            font-size: 0.95rem;
+            line-height: 1.5;
+            margin-bottom: 0;
+        }
+
+        /* Micro-interactions on hover */
+        .hover-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+            border-color: #007bff;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Card Layout Designs</h1>
+
+    <div class="card-container">
+
+        <div class="basic-card">
+            <h3>Basic Card</h3>
+            <p>This is a clean, minimal layout perfect for basic announcements, features, or quick notifications.</p>
+            <button>Read More</button>
+        </div>
+
+        <div class="image-card">
+            <img src="https://picsum.photos/300/160" alt="Card Placeholder Image">
+            <div class="card-content">
+                <h3>Image Card</h3>
+                <p>Ideal for blog posts, e-commerce products, or portfolio items showcasing visual content beautifully.</p>
+            </div>
+        </div>
+
+        <div class="hover-card">
+            <h3>Hover Interactive Card</h3>
+            <p>Bring life to your UI. This card smoothy elevates and deepens its shadow when a user positions their cursor over it.</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
