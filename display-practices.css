@@ -1,0 +1,26 @@
+*{
+    margin: 0 auto;
+    margin: 20px 20px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+.div1{
+    display: inline-block;
+    width: 50%;
+    height: 100px;
+    
+    background-color: #eee17c;
+    border: 1px solid grey;
+    text-align: center;
+    padding-top: 50px;
+
+}
+.div2{
+    display:inline-block;
+    width: 10%;
+    background-color:rgb(244, 133, 133);
+    border: 1px solid grey;
+    
+
+}
