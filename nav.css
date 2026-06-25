@@ -1,0 +1,118 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #dad2d2;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(76, 123, 226);
+    padding: 5px 15px;
+    border-bottom: 1px solid #052664;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.mybrand {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.mybrand img {
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 50% 40%;
+}
+
+.mybrand span {
+    font-size: 18px;
+    font-weight: 800;
+    color: antiquewhite;
+}
+
+.about ul {
+    list-style: none;
+    display: flex;
+    gap: 16px;
+}
+
+/* li fix */
+.about ul li {
+    display: flex;
+}
+
+.about ul li a {
+
+    display: flex;
+    align-items: center;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    font-weight: 500;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.2s;
+}
+
+.about ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+.about ul li:last-child a {
+    background-color: white;
+    color: rgb(76, 123, 226);
+    font-weight: 600;
+}
+
+.about ul li:last-child a:hover {
+    background-color: #e8eeff;
+}
+.search-box {
+    display: flex;
+    align-items: center;
+    gap: 0;
+}
+
+.search-box input {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px 0 0 6px;  /* left side rounded */
+    outline: none;
+    font-size: 14px;
+    width: 80%;
+    min-width: 80-px;
+}
+
+.search-box input:focus {
+    border-color: rgb(76, 123, 226);
+}
+
+.search-box button {
+    padding: 8px 10px;
+    background-color: rgb(10, 46, 131);
+    color: white;
+    border: none;
+    border-radius: 0 6px 6px 0;  /* right side rounded */
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.search-box button:hover {
+    background-color: #0a1134;
+}
+.search-box button {
+    padding: 8px 12px;
+    font-size: 14px;
+}
