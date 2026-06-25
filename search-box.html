@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .search-box{
+            display: flex;
+            align-items: center;
+            gap: 0;
+        }
+        .search-box input{
+            padding: 8px 14px;
+            border: 1px solid black;
+            border-radius: 6px 0 0 6px;  /* left side rounded */
+            font-size: 14px;
+            width: 200px;
+
+        }
+
+.search-box input:focus {
+    border-color: rgb(76, 123, 226);
+}
+
+.search-box button {
+    padding: 8px 16px;
+    background-color: rgb(76, 123, 226);
+    color: white;
+    border: none;
+    border-radius: 0 6px 6px 0;  /* right side rounded */
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.search-box button:hover {
+    background-color: #0b3ebe;}
+
+    </style>
+</head>
+<body>
+    <div class="search-box">
+        <input type="text" placeholder="search ....">
+        <button>Search</button>
+    </div>
+</body>
+</html>
